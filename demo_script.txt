@@ -1,0 +1,37 @@
+5-MINUTE DEMO SCRIPT
+
+0:00-0:30 Login
+- Login as Sales User.
+- Briefly mention JWT authentication and role-based backend authorization.
+
+0:30-1:15 Enquiry
+- Create/select a customer.
+- Create an enquiry with one industrial product and quantity.
+- Show enquiry in the list.
+
+1:15-2:00 Quotation
+- Create quotation against the enquiry.
+- Show quantity, price, discount and GST calculation.
+- Accept quotation.
+
+2:00-2:45 Sales Order
+- Convert accepted quotation into Sales Order.
+- Show traceability and order amount.
+
+2:45-3:40 Reservation
+- Logout.
+- Login as Admin.
+- Confirm the Sales Order.
+- Show Reserved and Available inventory changed.
+
+3:40-4:30 Dispatch
+- Enter vehicle number and driver name.
+- Dispatch the order.
+- Show order status DISPATCHED.
+
+4:30-5:00 Technical highlights
+- PostgreSQL relational schema
+- JWT + bcrypt
+- backend RBAC
+- transaction + row locking for reservation
+- automated tests

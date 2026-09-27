@@ -1,0 +1,109 @@
+{
+  "info": {
+    "name": "Fundsroom ERP API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"email\":\"admin@fundsroom.com\",\"password\":\"Admin@123\"}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "auth",
+            "login"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Products",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5000/api/products",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "products"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Enquiries",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5000/api/enquiries",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "enquiries"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Quotations",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5000/api/quotations",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "quotations"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Sales Orders",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5000/api/sales-orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "sales-orders"
+          ]
+        }
+      }
+    }
+  ]
+}
